@@ -1,0 +1,52 @@
+.main
+  .switch_age_type
+    %ul
+      %li
+        = link_to "#" , class:"side_bar__main--10" do
+          Teen
+      %li
+        = link_to "#" , class:"side_bar__main--20" do
+          20's
+      %li
+        = link_to "#" , class:"side_bar__main--30" do
+          30's
+      %li
+        = link_to "#" , class:"side_bar__main--40" do
+          40's
+      %li
+        = link_to "#" , class:"side_bar__main--50" do
+          50's
+  .main_contents
+    .main_contents_swich
+      %ul
+        %li
+          = link_to "#" , class:"side_bar__main--new" do
+            New
+        %li
+          = link_to "#" , class:"side_bar__main--runk" do
+            Runking
+  .contents_body
+    .contents_body__list
+      -# - @posts.each do |post|
+      .contents_body__list--1
+        .contents_body__list--1--image
+          -# - post.images.each do |image|
+          -#   =image_tag image, size: "215x250"
+        .contents_body__list--1--prf
+          .contents_body__list--1--prf--img
+          .contents_body__list--1--prf--age
+      .contents_body__list--2
+        .contents_body__list--2--image
+        .contents_body__list--2--prf
+          .contents_body__list--2--prf--img
+          .contents_body__list--2--prf--age
+      .contents_body__list--3
+        .contents_body__list--3--image
+        .contents_body__list--3--prf
+          .contents_body__list--3--prf--img
+          .contents_body__list--3--prf--age
+      .contents_body__list--4
+        .contents_body__list--4--image
+        .contents_body__list--4--prf
+          .contents_body__list--4--prf--img
+          .contents_body__list--4--prf--age

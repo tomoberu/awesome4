@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.body {
+  background-image: url("1455378.jpeg");
+  background-size: 3.2cm;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+
+  .header {
+    text-align: center;
+    
+    padding: 0 40px;
+    &__title {
+      color: #000000;
+      font-size: 60px;
+      line-height: 90px;
+      margin: 0 auto;
+      padding-left: 100px;
+      font-family: cursive;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      // font-family: 'Snell Roundhand', sans-serif;
+      .ul {
+        display: flex;;
+        text-decoration: none;
+        .li {
+            font-size: 40px;
+            padding-left: 20px;
+          a {
+            color: #CC3366;
+          }
+        }
+      };
+    }
+  };
+
+  .side_bar {
+    padding: 20px 20px;
+    width: 250px;
+    background-color: #CCFFFF;
+    border: double 10px;
+    .form {
+      &__box {
+        &--text {
+        }
+        &__image {
+          &--hide {
+            display: none;
+          }
+        }
+      }
+    }
+    &__top {
+      text-align: center;
+      font-size: 50px;
+      padding-top: 30px;
+    }
+    &__main {
+      .ul {
+        text-align: center;
+        .li {
+          font-size: 30px;
+          padding-top: 30px;
+          .side_bar__main--R {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--C {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--F {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--L {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  };
+
+  .main {
+    background-color: yellow;
+    padding: 20px 20px;
+    width: calc(100vw - 250px);
+    height: 100%;
+
+    .switch_age_type {
+      background-color: white;
+      width: calc(100vw - 300px);
+      height: 40px;
+      font-size: 30px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          .side_bar__main--10 {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--20 {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--30 {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--40 {
+            text-decoration: none;
+            color: black;
+          }
+          .side_bar__main--50 {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+    .main_contents {
+      background-color: white;
+      width: calc(100vw - 300px);
+      height: 40px;
+      font-size: 30px;
+      padding-top: 10px;
+      .main_contents_swich {
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            .side_bar__main--new {
+              text-decoration: none;
+              padding-right: 20px;
+              color: black;
+              
+            }
+            .side_bar__main--runk {
+              text-decoration: none;
+              padding-left: 20px;
+              color: black;
+              
+            }
+          }
+        }
+      }
+    }
+    &_body {
+      &__list {
+        &--1 {
+          &--image {
+
+          }
+          &--prf {
+            &--img {
+
+            }
+            &--age {
+
+            }
+          }
+        }
+        &--2 {
+          &--image {
+
+          }
+          &--prf {
+            &--img {
+
+            }
+            &--age {
+
+            }
+          }
+        }
+        &--3 {
+          &--image {
+
+          }
+          &--prf {
+            &--img {
+
+            }
+            &--age {
+
+            }
+          }
+        }
+        &--4{
+          &--image {
+
+          }
+          &--prf {
+            &--img {
+
+            }
+            &--age {
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    &__main {
+
+    }
+  }
+};
+
+
+

@@ -1,0 +1,25 @@
+.side_bar
+  .form
+    .form__box
+      = form_for "#" do |f|
+        = f.text_field :content, class: 'form__box--text', placeholder: 'カテゴリー'
+        -# = f.label :image, class: 'form__box__image' do
+        -#   = icon 'fas', 'search', id:"image"
+        = f.submit 'Send', value:"&#xf002;", class:'fas'
+        -# %button type: "submit" 
+        -#   = icon('fas', 'search')
+  .side_bar__top Category
+  .side_bar__main
+    .ul
+      .li<
+        = link_to "#" , class:"side_bar__main--R" do
+          Restaurant
+      .li< 
+        = link_to "#" , class:"side_bar__main--C"do
+          Cafe
+      .li< 
+        = link_to "#" , class:"side_bar__main--F"do
+          Fashion
+      .li< 
+        = link_to "#" , class:"side_bar__main--L"do
+          LifeStyle

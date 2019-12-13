@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Awesome4
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  .body
+    .header
+      .header__title 
+        = link_to root_path, class:"header__title" do
+          AweSome
+        .ul
+          .li 
+            = link_to "#" do
+              = icon('far', 'address-book')
+          .li
+            = link_to "#" do
+              = icon('fas', 'user-circle',class: 'icon')
+    = yield
