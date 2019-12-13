@@ -52,19 +52,30 @@
     border: double 10px;
     .form {
       &__box {
-        &--text {
+        &--a {
+          height: 110px;
         }
-        &__image {
-          &--hide {
-            display: none;
+          &--text {
+            padding: 10px;
+          }
+          &--btn {
+            background-color: #CC3366;
+            display: block;
+            height: 50px;
+            width: 100px;
+            margin: 0 auto;
+            border-radius: 30px;
+
+            
+            
           }
         }
       }
-    }
+  
     &__top {
       text-align: center;
       font-size: 50px;
-      padding-top: 30px;
+      padding-top: 10px;
     }
     &__main {
       .ul {
@@ -91,19 +102,22 @@
         }
       }
     }
-  };
+  }
+
 
   .main {
-    background-color: yellow;
-    padding: 20px 20px;
+    background-image : url("1455378.jpg");
+    background-size: 22cm;
+    padding: 10px 20px;
     width: calc(100vw - 250px);
     height: 100%;
 
     .switch_age_type {
-      background-color: white;
+      background-color: burlywood;
       width: calc(100vw - 300px);
-      height: 40px;
-      font-size: 30px;
+      height: 25px;
+      font-size: 20px;
+      border: double 3px;
       ul {
         display: flex;
         justify-content: space-between;
@@ -132,11 +146,11 @@
       }
     }
     .main_contents {
-      background-color: white;
+      background-color: burlywood;
       width: calc(100vw - 300px);
-      height: 40px;
-      font-size: 30px;
-      padding-top: 10px;
+      height: 30px;
+      font-size: 25px;
+      
       .main_contents_swich {
         ul {
           display: flex;
@@ -157,70 +171,24 @@
           }
         }
       }
-    }
-    &_body {
-      &__list {
-        &--1 {
+      .contents_body {
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
           &--image {
-
+            padding: 10px 10px;
           }
           &--prf {
             &--img {
-
             }
             &--age {
-
-            }
-          }
-        }
-        &--2 {
-          &--image {
-
-          }
-          &--prf {
-            &--img {
-
-            }
-            &--age {
-
-            }
-          }
-        }
-        &--3 {
-          &--image {
-
-          }
-          &--prf {
-            &--img {
-
-            }
-            &--age {
-
-            }
-          }
-        }
-        &--4{
-          &--image {
-
-          }
-          &--prf {
-            &--img {
-
-            }
-            &--age {
-
             }
           }
         }
       }
     }
   }
-  .footer {
-    &__main {
-
-    }
-  }
-};
+}
 
 
 

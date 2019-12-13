@@ -25,28 +25,34 @@
         %li
           = link_to "#" , class:"side_bar__main--runk" do
             Runking
-  .contents_body
-    .contents_body__list
-      -# - @posts.each do |post|
-      .contents_body__list--1
-        .contents_body__list--1--image
-          -# - post.images.each do |image|
-          -#   =image_tag image, size: "215x250"
-        .contents_body__list--1--prf
-          .contents_body__list--1--prf--img
-          .contents_body__list--1--prf--age
-      .contents_body__list--2
-        .contents_body__list--2--image
-        .contents_body__list--2--prf
-          .contents_body__list--2--prf--img
-          .contents_body__list--2--prf--age
-      .contents_body__list--3
-        .contents_body__list--3--image
-        .contents_body__list--3--prf
-          .contents_body__list--3--prf--img
-          .contents_body__list--3--prf--age
-      .contents_body__list--4
-        .contents_body__list--4--image
-        .contents_body__list--4--prf
-          .contents_body__list--4--prf--img
-          .contents_body__list--4--prf--age
+    .contents_body
+      .contents_body__list
+        - @posts.each do |post|
+          .contents_body__list--image
+            = image_tag post.image, size: "200x250"
+              
+    
+              
+      -#     .contents_body__list--1--prf
+      -#       .contents_body__list--1--prf--img
+      -#       .contents_body__list--1--prf--age
+      -# .contents_body__list--2
+      -#   .contents_body__list--2--image
+      -#     -# = @posts.image
+      -#   .contents_body__list--2--prf
+      -#     .contents_body__list--2--prf--img
+      -#     .contents_body__list--2--prf--age
+      -# .contents_body__list--3
+      -#   .contents_body__list--3--image
+      -#     -# = @posts.image
+      -#   .contents_body__list--3--prf
+      -#     .contents_body__list--3--prf--img
+      -#     .contents_body__list--3--prf--age
+      -# .contents_body__list--4
+      -#   .contents_body__list--4--image
+      -#     -# = @posts.image
+      -#   .contents_body__list--4--prf
+      -#     .contents_body__list--4--prf--img
+      -#     .contents_body__list--4--prf--age
+
+
