@@ -13,9 +13,13 @@
           AweSome
         .ul
           .li 
-            = link_to "#" do
-              = icon('far', 'address-book')
+            = link_to destroy_user_session_path, method: :delete do
+              = icon('fas', 'sign-out-alt')
           .li
-            = link_to "#" do
+            = link_to new_post_path do
               = icon('fas', 'user-circle',class: 'icon')
+          - if user_signed_in?
+            .li
+              = link_to user_path(current_user.id) do
+                = icon('fas', 'chevron-circle-up',class: 'icon')
     = yield

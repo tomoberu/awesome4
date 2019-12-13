@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
 
   def index
-    # @posts = Posts.all.order("created_at DESC").page(params[:page]).per(3)
-    @posts = Post.all
+    @posts = Post.all.order("created_at DESC").page(params[:page])
+    # @posts = Post.all
   end
 
   def new
@@ -21,10 +21,14 @@ class PostsController < ApplicationController
     post.destroy
   end
 
+  def search
+    @posts = Post.search(params[:keyword])
+  end
+
   private
 
   def post_params
-    params.require(:post).permit(:text, :image).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:name, :image, :text, :keyword).merge(user_id: current_user.id)
   end
 
 end

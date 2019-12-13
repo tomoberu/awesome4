@@ -1,0 +1,77 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.account-page {
+  height: 100vh;
+  .account-page__inner.clearfix {
+    
+    text-align: center;
+    padding-top: 20px;
+    .account-page__inner--1 {
+      font-size: 60px;
+      font-family: 'Baskerville', sans-serif;
+    }
+    .account-page__inner--2 {
+      padding-top: 20px;
+      .ul {
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: 'Baskerville', sans-serif;
+        .li {
+
+        }
+        .li {
+
+        }
+      }
+      .ul {
+        padding-top: 20px;
+        font-family: 'Baskerville', sans-serif;
+        .li {
+
+        }
+        .li {
+          
+        }
+      }
+      .ul {
+        padding-top: 20px;
+        font-family: 'Baskerville', sans-serif;
+        .li {
+
+        }
+        .li {
+          
+        }
+      }
+      .actions {
+        padding-top: 40px;
+        .input-box__image {
+          height: 80px;
+          display: flex;
+          .brain1 {
+            font-size: 50px;
+            padding-left: 450px;
+          }
+          .brain2 {
+            font-size: 50px;
+            padding-right: 450px;
+          }
+          .btn {
+            background-color: #CC3366;
+            display: block;
+            height: 50px;
+            width: 100px;
+            margin: 0 auto;
+            border-radius: 30px;
+            &:hover {
+              opacity: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

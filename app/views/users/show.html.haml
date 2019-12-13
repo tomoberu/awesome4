@@ -1,0 +1,28 @@
+#account-page.account-page
+  .account-page__inner.clearfix
+    .account-page__inner--1
+      My Account
+    .account-page__inner--2
+      = form_for(current_user) do |f|
+        .ul
+          .li
+            = f.label :NickName
+          .li
+            = f.text_field :name, placeholder: 'nickname'
+        .ul
+          .li
+            = f.label :Age
+          .li
+            = f.text_field :age, placeholder: 'age'
+        .ul
+          .li
+            = f.label :email
+          .li
+            = f.email_field :email
+        .actions
+          = f.label :submit, class: 'input-box__image' do
+            = icon 'fas', 'brain', class:'brain1'
+            = f.submit "", class: 'btn'
+            = icon 'fas', 'brain', class:'brain2'
+           
+            
