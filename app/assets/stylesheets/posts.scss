@@ -46,28 +46,35 @@
   };
 
   .side_bar {
-    padding: 20px 20px;
+    padding: 120px 20px 20px 20px;
     width: 250px;
-    background-color: #CCFFFF;
-    border: double 10px;
+    background-image: url("1455378.jpeg");
+    background-size: 24.5cm;
+    // border: double 10px;
+    :first-letter {
+      color: #40E0D0;
+    }
     .form {
+      text-align: center;
+      // padding: 10px;
       &__box {
         &--a {
           height: 110px;
+          
         }
           &--text {
             padding: 10px;
+            border-color: #40E0D0;
+            border-radius: 30px;
+            margin: 10px;
           }
           &--btn {
-            background-color: #CC3366;
+            background-color: grey;
             display: block;
-            height: 50px;
-            width: 100px;
+            height: 30px;
+            width: 30px;
             margin: 0 auto;
             border-radius: 30px;
-
-            
-            
           }
         }
       }
@@ -75,7 +82,7 @@
     &__top {
       text-align: center;
       font-size: 50px;
-      padding-top: 10px;
+      // padding-top: 10px;
     }
     &__main {
       .ul {
@@ -104,20 +111,28 @@
     }
   }
 
-
+  
   .main {
     background-image : url("1455378.jpg");
-    background-size: 22cm;
+    background-size: 24.5cm;
     padding: 10px 20px;
     width: calc(100vw - 250px);
     height: 100%;
 
+    :first-letter {
+      color: black;
+    }
+
     .switch_age_type {
-      background-color: burlywood;
+      background-color: #CCCCFF;
       width: calc(100vw - 300px);
       height: 25px;
       font-size: 20px;
-      border: double 3px;
+      border-top: solid 2px;
+      border-right: solid 2px;
+      border-left: solid 2px;
+      border-color: black;
+      // border-radius: 30px;
       ul {
         display: flex;
         justify-content: space-between;
@@ -146,11 +161,15 @@
       }
     }
     .main_contents {
-      background-color: burlywood;
+      background-color: #CCCCFF;
       width: calc(100vw - 300px);
       height: 30px;
       font-size: 25px;
-      
+      border-bottom: solid 2px;
+      border-right: solid 2px;
+      border-left: solid 2px;
+      // border-radius: 30px;
+      border-color: black;
       .main_contents_swich {
         ul {
           display: flex;
@@ -189,6 +208,3 @@
     }
   }
 }
-
-
-

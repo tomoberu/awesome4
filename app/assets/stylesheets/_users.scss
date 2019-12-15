@@ -2,13 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+:first-letter {
+  color: #CC3366;
+}
 .account-page {
   height: 100vh;
+  background-image: url("1455378.jpeg");
+  background-size: 24.5cm;
   .account-page__inner.clearfix {
-    
     text-align: center;
     padding-top: 20px;
+    background-color: white;
     .account-page__inner--1 {
       font-size: 60px;
       font-family: 'Baskerville', sans-serif;
@@ -60,10 +64,10 @@
             padding-right: 450px;
           }
           .btn {
-            background-color: #CC3366;
+            background-color: grey;
             display: block;
             height: 50px;
-            width: 100px;
+            width: 50px;
             margin: 0 auto;
             border-radius: 30px;
             &:hover {

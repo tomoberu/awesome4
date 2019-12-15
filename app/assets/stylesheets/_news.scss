@@ -1,0 +1,104 @@
+
+.new {
+  height: 100vh;
+  padding: 20px 40px;
+  text-align: center;
+  :first-letter {
+    color: #6666CC;
+  }
+  .new-create {
+    .new-create__form {
+      font-size: 60px;
+      font-family: 'Baskerville', sans-serif;
+    }
+    .new-create__input-box {
+      font-family: 'Baskerville', sans-serif;
+      .ul {
+        padding-top: 15px;
+        font-family: 'Baskerville', sans-serif;
+        .li {
+          font-size: 30px;
+          padding: 5px;
+        }
+        .li {
+          .name {
+            border-radius: 30px;
+          }
+        }
+      }
+      .ul {
+        .li {
+          
+        }
+        .li {
+          .age {
+            border-radius: 30px;
+          }
+        }
+      }
+      .ul {
+        .li {
+          
+        }
+        .li {
+          .url {
+            border-radius: 30px;
+          }
+        }
+      }
+      .ul {
+        .li {
+          
+        }
+        .li {
+          .address {
+            border-radius: 30px;
+          }
+        }
+      }
+      .ul {
+        .li {
+          
+        }
+        .li {
+          .text {
+            border-radius: 30px;
+            width: 600px;
+            height: 300px;
+          }
+        }
+      }
+      .actions {
+        padding-top: 40px;
+      // :first-letter {
+      //   color: black;
+      // }
+        .input-box__image {
+          height: 80px;
+          display: flex;
+          .brain1 {
+            font-size: 50px;
+            padding-left: 350px;
+            color: black;
+          }
+          .brain2 {
+            font-size: 50px;
+            padding-right: 350px;
+            color: black;
+          }
+          .btn {
+            background-color: grey;
+            display: block;
+            height: 50px;
+            width: 50px;
+            margin: 0 auto;
+            border-radius: 30px;
+            &:hover {
+              opacity: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
