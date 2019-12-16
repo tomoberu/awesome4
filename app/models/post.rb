@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-  belongs_to :category
-  belongs_to :user
+  belongs_to :category, optional: true
+  belongs_to :user, optional: true
 
   # mount_uploader :image, ImageUploader
   def self.search(search)

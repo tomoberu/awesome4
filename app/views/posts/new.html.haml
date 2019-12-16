@@ -3,7 +3,7 @@
     .new-create__form
       New Post
     .new-create__input-box
-      = form_for "#" do |f|
+      = form_for @post, method: :post, id: :new_comment do |f|
         .ul
           .li
             = f.label :Title

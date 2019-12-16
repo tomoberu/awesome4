@@ -1,9 +1,32 @@
-.form__box
-  = form_for search_posts_path, method: :get, class: 'form__box--a' do |f|
-    = f.text_field :kyeword, placeholder: "投稿を検索する", class: 'form__box--text'
-    = f.submit 'Send', value:"Search", class:'form__box--btn'
-
--# .form__box--image
--#   - @posts.each do |posts|
--#     .form__box--image--a
--#       = image_tag post.image
+.main
+  .switch_age_type
+    %ul
+      %li
+        = link_to "#" , class:"side_bar__main--10" do
+          Teen
+      %li
+        = link_to "#" , class:"side_bar__main--20" do
+          20's
+      %li
+        = link_to "#" , class:"side_bar__main--30" do
+          30's
+      %li
+        = link_to "#" , class:"side_bar__main--40" do
+          40's
+      %li
+        = link_to "#" , class:"side_bar__main--50" do
+          50's
+  .main_contents
+    .main_contents_swich
+      %ul
+        %li
+          = link_to "#" , class:"side_bar__main--new" do
+            New
+        %li
+          = link_to "#" , class:"side_bar__main--runk" do
+            Runking
+    .contents_body
+      .contents_body__list
+        - @posts.each do |post|
+          .contents_body__list--image
+            = image_tag post.image, size: "200x250"

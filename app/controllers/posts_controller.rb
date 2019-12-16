@@ -10,7 +10,16 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    @post = Post.new
+    respond_to do |format|
+      format.html { redirect_to root_path  }
+      format.json
+    end
+    
+  # respond_to do |format|
+  #   format.html { redirect_to :root }
+  #   format.json { render json: @post}
+  # end
   end
 
   def edit
@@ -22,13 +31,12 @@ class PostsController < ApplicationController
   end
 
   def search
-    @posts = Post.search(params[:keyword])
+    @posts = Post.all.order("created_at DESC").page(params[:page])
   end
 
   private
 
   def post_params
-    params.require(:tweet).permit(:name, :image, :text, :keyword).merge(user_id: current_user.id)
+    params.require(:post).permit(:name, :image, :text, :address, :age).merge(user_id: current_user.id)
   end
-
 end
