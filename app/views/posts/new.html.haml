@@ -3,7 +3,15 @@
     .new-create__form
       New Post
     .new-create__input-box
-      = form_for @post, method: :post, id: :new_comment do |f|
+      = form_for (@post), method: :post, class:"new_comment" do |f|
+        #imageBox.items__images__upload
+          .item-num-0#image-box__container
+            = f.fields_for :photo, class: "image-label" do |i|
+              %label{for:"user_img"}
+                .image-box__container__box
+                  = i.file_field :image, type: 'file', name: "item[photos_attributes][][image]", value:"", style: "display:none", class: "image-label__input", id: "user_img"
+                  .image-box__container__box__word1
+                    Click Me!
         .ul
           .li
             = f.label :Title
@@ -14,11 +22,7 @@
             = f.label :Age
           .li
             = f.text_field :age, placeholder: 'age', class:'age'
-        .ul
-          .li
-            = f.label :"画像"
-          .li
-            = f.text_field :image, placeholder: 'Image Url', class:'url'
+        
         .ul
           .li
             = f.label :Map

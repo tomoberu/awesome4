@@ -10,6 +10,7 @@
     .new-create__form {
       font-size: 60px;
       font-family: 'Baskerville', sans-serif;
+      margin-bottom: 40px;
     }
     .new-create__input-box {
       font-family: 'Baskerville', sans-serif;
@@ -24,6 +25,76 @@
           .name {
             border-radius: 30px;
           }
+        }
+      }
+      .items__images__upload {
+        display: flex;
+        flex-wrap: wrap;
+        border: solid 3px #6666CC;
+        margin: 0 auto;
+        height: 160px;
+        width: 640px;
+        .image-box__container {
+          &__box {
+            padding: 0;
+            position: relative;
+            &__word1 {
+            }
+          }
+          .item-image {
+            text-align: center;
+            background-color: white;
+            margin-right: 15px;
+            margin: 0 auto;
+            margin-right: 5px;
+            .item-image__content {
+              .item-image__content--icon {
+              }
+            }
+            .item-image__operetion {
+              font-size: 20px;
+              background-color: #f5f5f5;
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+          .item-num-0{
+            width: 100%;
+          }
+          .item-num-1{
+            width: 491px;
+          }
+          .item-num-2{
+            width: 363px;
+          }
+          .item-num-3{
+            width: 234px;
+          }
+          .item-num-4{
+            width: 106px;
+
+          }
+          //下段のfile_field
+          .item-num-5{
+            width: 100%;
+          }
+          .item-num-6{
+            width: 491px;
+          }
+          .item-num-7{
+            width: 363px;
+          }
+          .item-num-8{
+            width: 234px;
+          }
+          .item-num-9{
+            width: 106px;
+          }
+          .item-image__operetion--delete{
+          }
+          
+        }
+        .item-image__operetion {
         }
       }
       .ul {

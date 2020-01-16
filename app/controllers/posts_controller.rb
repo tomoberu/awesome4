@@ -7,17 +7,20 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @photo = @post.photos.new
   end
 
   def create
     @post = Post.new(post_params)
-    redirect_to root_path
+    binding.pry
+    @post.save!
+    redirect_to root_path(@post)
   end
     
   # respond_to do |format|
   #   format.html { redirect_to :root }
   #   format.json { render json: @post}
-  # end
+  # endpost_params
   
 
   def edit
@@ -35,6 +38,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:name, :image, :text, :address, :age).merge(user_id: current_user.id)
+    params.require(:post).permit(:name, :text, :address, :age, photos_attributes: [:image]).merge(user_id: current_user.id)
   end
 end
