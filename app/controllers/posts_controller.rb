@@ -10,17 +10,15 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new
-    respond_to do |format|
-      format.html { redirect_to root_path  }
-      format.json
-    end
+    @post = Post.new(post_params)
+    redirect_to root_path
+  end
     
   # respond_to do |format|
   #   format.html { redirect_to :root }
   #   format.json { render json: @post}
   # end
-  end
+  
 
   def edit
   end
